@@ -7,9 +7,11 @@ export const OPENAI_API_HOST ='https://api.nova-oss.com/v1/chat/completions';
 export const DEFAULT_TEMPERATURE = 
   parseFloat(process.env.NEXT_PUBLIC_DEFAULT_TEMPERATURE || "1");
 
-export const OPENAI_API_TYPE ='';
+export const OPENAI_API_TYPE =
+  process.env.OPENAI_API_TYPE || 'openai';
 
-export const OPENAI_API_VERSION ='';
+export const OPENAI_API_VERSION =
+  process.env.OPENAI_API_VERSION || '2023-03-15-preview';
 
 export const OPENAI_ORGANIZATION =
   process.env.OPENAI_ORGANIZATION || '';
